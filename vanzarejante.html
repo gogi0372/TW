@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vânzare Jante și Anvelope</title>
-   
+  <link rel="stylesheet" href="jante.css">
 </head>
 <body>
+
+<nav>
+    <div class="logo">
+        <a href="index.html">TVGARAGE</a>
+    </div>
+    <div class="nav-item">
+        <a href="arenda.html">Arendă Auto</a>
+    </div>
+    <div class="nav-item">
+        <a href="detailingauto.html">Detailing Auto</a>
+    </div>
+    <div class="nav-item">
+        <a href="vanzarejante.html">Vânzare Jante și Anvelope</a>
+    </div>
+    <div class="nav-item">
+        <a href="vanzaremasini.html">Vânzare Mașini</a>
+    </div>
+</nav>
 
 <header>
   <h1>Jante și Anvelope - AutoWheelShop</h1>
@@ -14,7 +32,7 @@
 
 <div class="container">
   <div class="product">
-    <img src="https://a.d-cd.net/4gAAAgKC9uA-960.jpg" width=300 alt="Anvelope Iarnă">
+    <img src="https://a.d-cd.net/4gAAAgKC9uA-960.jpg" alt="Anvelope Iarnă">
     <div class="details">
       <h2>Anvelope iarnă Michelin 205/55 R16</h2>
       <p>Indice viteză: H (210 km/h)<br>
@@ -25,9 +43,9 @@
   </div>
 
   <div class="product">
-    <img src="https://elitewheels.ru/image/catalog/wheel/10589371b91d43e0c7f52229e4d87547.png " width="300" alt="Jante aliaj 17 inch">
+    <img src="https://elitewheels.ru/image/catalog/wheel/10589371b91d43e0c7f52229e4d87547.png" alt="Jante aliaj 17 inch">
     <div class="details">
-      <h2>Jante aliaj 17" OZ Racing</h2>
+      <h2>Jante aliaj 17&quot; OZ Racing</h2>
       <p>Dimensiuni: 5x112, ET45, 7.5Jx17<br>
          Material: Aliaj ușor<br>
          Compatibilitate: Audi, VW, Skoda</p>
@@ -36,7 +54,7 @@
   </div>
 
   <div class="product">
-    <img src=" https://a.d-cd.net/nIAAAgEvmOA-1920.jpg" width=300 alt="Anvelope all-season">
+    <img src="https://a.d-cd.net/nIAAAgEvmOA-1920.jpg" alt="Anvelope all-season">
     <div class="details">
       <h2>Anvelope all-season Continental 195/65 R15</h2>
       <p>Indice viteză: T (190 km/h)<br>
@@ -46,6 +64,16 @@
     </div>
   </div>
 </div>
+
+<script>
+  window.addEventListener('load', () => {
+      document.querySelectorAll('.container, .car-list, .car-item').forEach(el => {
+          el.classList.add('rise-up');
+      });
+  });
+</script>
+
+
 
 </body>
 </html>
